@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubshar - Professional Video Editor Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-glass transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold gradient-text">MUBSHAR</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-red-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-red-400 transition-colors">About</a>
+                    <a href="#showreel" class="hover:text-red-400 transition-colors">Showreel</a>
+                    <a href="#portfolio" class="hover:text-red-400 transition-colors">Portfolio</a>
+                    <a href="#services" class="hover:text-red-400 transition-colors">Services</a>
+                    <a href="#skills" class="hover:text-red-400 transition-colors">Skills</a>
+                    <a href="#pricing" class="hover:text-red-400 transition-colors">Pricing</a>
+                    <a href="#contact" class="hover:text-red-400 transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-2xl" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="flex flex-col items-center space-y-8 text-xl">
+            <a href="#home" class="hover:text-red-400 transition-colors">Home</a>
+            <a href="#about" class="hover:text-red-400 transition-colors">About</a>
+            <a href="#showreel" class="hover:text-red-400 transition-colors">Showreel</a>
+            <a href="#portfolio" class="hover:text-red-400 transition-colors">Portfolio</a>
+            <a href="#services" class="hover:text-red-400 transition-colors">Services</a>
+            <a href="#skills" class="hover:text-red-400 transition-colors">Skills</a>
+            <a href="#pricing" class="hover:text-red-400 transition-colors">Pricing</a>
+            <a href="#contact" class="hover:text-red-400 transition-colors">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Video Placeholder -->
+        <div class="hero-video bg-gradient-to-br from-gray-900 via-black to-red-900"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 fadeInUp">
+                <span class="gradient-text text-glow">MUBSHAR</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-4 fadeInUp opacity-90">Professional Video Editor & Filmmaker</p>
+            <p class="text-lg mb-8 fadeInUp opacity-80 max-w-2xl mx-auto">
+                Creating cinematic experiences through cutting-edge video editing, motion graphics, and visual storytelling that captivates audiences worldwide.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fadeInUp">
+                <a href="#showreel" class="btn-primary px-8 py-4 rounded-full text-white font-semibold hover:shadow-lg transition-all">
+                    <i class="fas fa-play mr-2"></i>Watch Showreel
+                </a>
+                <a href="#contact" class="px-8 py-4 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-black transition-all">
+                    <i class="fas fa-envelope mr-2"></i>Hire Me
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 bounce">
+            <i class="fas fa-chevron-down text-2xl text-white opacity-60"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">About Me</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    Passionate video editor with 5+ years of experience in creating compelling visual narratives for brands, artists, and content creators worldwide.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="glass p-8 rounded-3xl">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face" alt="Mubshar" class="w-full h-96 object-cover rounded-2xl mb-6">
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-6">Creative Video Editor & Filmmaker</h3>
+                    <p class="text-lg mb-6 opacity-90">
+                        I specialize in transforming raw footage into compelling stories that engage, inspire, and convert. My expertise spans across various formats from commercial advertisements to music videos, documentaries, and social media content.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center glass p-4 rounded-xl">
+                            <div class="text-3xl font-bold gradient-text">500+</div>
+                            <div class="opacity-80">Projects Completed</div>
+                        </div>
+                        <div class="text-center glass p-4 rounded-xl">
+                            <div class="text-3xl font-bold gradient-text">100+</div>
+                            <div class="opacity-80">Happy Clients</div>
+                        </div>
+                        <div class="text-center glass p-4 rounded-xl">
+                            <div class="text-3xl font-bold gradient-text">5+</div>
+                            <div class="opacity-80">Years Experience</div>
+                        </div>
+                        <div class="text-center glass p-4 rounded-xl">
+                            <div class="text-3xl font-bold gradient-text">50M+</div>
+                            <div class="opacity-80">Views Generated</div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-primary px-8 py-4 rounded-full text-white font-semibold inline-block">
+                        <i class="fas fa-user mr-2"></i>Work With Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section id="showreel" class="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Demo Reel</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    Showcase of my best video editing work across different genres and styles
+                </p>
+            </div>
+
+            <!-- Featured Showreel -->
+            <div class="mb-16" data-aos="zoom-in">
+                <div class="custom-video-player mx-auto max-w-4xl glow">
+                    <img src="https://i.ytimg.com/vi/WUB2pSkwN2M/hq720.jpg" alt="Featured Showreel" class="video-thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Showreels -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="custom-video-player" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.ytimg.com/vi/mDfpW_IgN6Y/hq720.jpg" alt="Commercial Reel" class="video-thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-button text-2xl">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <h3 class="text-lg font-semibold">Commercial</h3>
+                        <p class="opacity-70">Brand Advertisements</p>
+                    </div>
+                </div>
+
+                <div class="custom-video-player" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://i.ytimg.com/vi/6kYRUsXtS4s/hq720.jpg" alt="Music Video Reel" class="video-thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-button text-2xl">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <h3 class="text-lg font-semibold">Music Videos</h3>
+                        <p class="opacity-70">Artist Collaborations</p>
+                    </div>
+                </div>
+
+                <div class="custom-video-player" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://i.ytimg.com/vi/9Fsa0_uuaDM/hq720.jpg" alt="Corporate Reel" class="video-thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-button text-2xl">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <h3 class="text-lg font-semibold">Corporate</h3>
+                        <p class="opacity-70">Business Content</p>
+                    </div>
+                </div>
+
+                <div class="custom-video-player" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://i.ytimg.com/vi/uUdBBQAvYnU/hq720.jpg" alt="Social Media Reel" class="video-thumbnail">
+                    <div class="video-overlay">
+                        <div class="play-button text-2xl">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <h3 class="text-lg font-semibold">Social Media</h3>
+                        <p class="opacity-70">Viral Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Portfolio</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    A collection of my best video editing projects across various industries and styles
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="text-center mb-12" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="music">Music Videos</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="motion">Motion Graphics</button>
+                <button class="filter-btn" data-filter="vfx">VFX</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolioGrid">
+                <!-- Music Video Projects -->
+                <div class="portfolio-item music" data-aos="fade-up">
+                    <img src="https://i.ytimg.com/vi/-dr-wvPjGFo/hq720.jpg" alt="Music Video Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Artist Music Video</h3>
+                        <p class="mb-4">Creative music video with dynamic editing</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item music" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.ytimg.com/vi/Nwtrs1Nm8-g/hq720.jpg" alt="Music Video Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Pop Artist Collaboration</h3>
+                        <p class="mb-4">High-energy music video production</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Commercial Projects -->
+                <div class="portfolio-item commercial" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://i.ytimg.com/vi/g2isKlnolUA/hq720.jpg" alt="Commercial Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Brand Advertisement</h3>
+                        <p class="mb-4">30-second commercial for major brand</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item commercial" data-aos="fade-up">
+                    <img src="https://i.ytimg.com/vi/A6R22oj15-4/hq720.jpg" alt="Commercial Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Product Launch Video</h3>
+                        <p class="mb-4">Dynamic product showcase</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Corporate Projects -->
+                <div class="portfolio-item corporate" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.ytimg.com/vi/ZlL02zx9sew/hq720.jpg" alt="Corporate Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Corporate Training</h3>
+                        <p class="mb-4">Professional training video series</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item corporate" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://i.ytimg.com/vi/F7OTH1OnaNo/hq720.jpg" alt="Corporate Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Company Profile</h3>
+                        <p class="mb-4">Executive company presentation</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Social Media Projects -->
+                <div class="portfolio-item social" data-aos="fade-up">
+                    <img src="https://i.ytimg.com/vi/Njv_gczUVBk/hq720.jpg" alt="Social Media Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Viral Instagram Reel</h3>
+                        <p class="mb-4">Trendy social media content</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item social motion" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.ytimg.com/vi/S6ywyn3sfZw/hq720.jpg" alt="Motion Graphics Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Animated Explainer</h3>
+                        <p class="mb-4">Motion graphics and animation</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+
+                <div class="portfolio-item vfx" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://i.ytimg.com/vi/VfYkGzcFbHY/hq720.jpg" alt="VFX Project">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Visual Effects Showcase</h3>
+                        <p class="mb-4">Advanced VFX and compositing</p>
+                        <button class="btn-primary px-4 py-2 rounded-full text-sm">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Services</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    Comprehensive video editing and production services to bring your vision to life
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="text-4xl mb-6 gradient-text">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Video Editing</h3>
+                    <p class="opacity-80 mb-6">Professional video editing with seamless transitions, perfect pacing, and storytelling excellence.</p>
+                    <ul class="text-sm opacity-70 space-y-2">
+                        <li>• Timeline Editing</li>
+                        <li>• Multi-cam Syncing</li>
+                        <li>• Rough Cut to Final</li>
+                        <li>• Fast Turnaround</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl mb-6 gradient-text">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Color Grading</h3>
+                    <p class="opacity-80 mb-6">Advanced color correction and grading to enhance mood, atmosphere, and visual consistency.</p>
+                    <ul class="text-sm opacity-70 space-y-2">
+                        <li>• Color Correction</li>
+                        <li>• Cinematic Grading</li>
+                        <li>• LUT Creation</li>
+                        <li>• Match Color</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl mb-6 gradient-text">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Motion Graphics</h3>
+                    <p class="opacity-80 mb-6">Eye-catching motion graphics, animated titles, and visual effects that captivate audiences.</p>
+                    <ul class="text-sm opacity-70 space-y-2">
+                        <li>• 2D Animation</li>
+                        <li>• Title Design</li>
+                        <li>• Logo Animation</li>
+                        <li>• Infographics</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl mb-6 gradient-text">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">VFX & Compositing</h3>
+                    <p class="opacity-80 mb-6">Advanced visual effects, green screen compositing, and digital enhancement services.</p>
+                    <ul class="text-sm opacity-70 space-y-2">
+                        <li>• Green Screen</li>
+                        <li>• Digital Compositing</li>
+                        <li>• Object Removal</li>
+                        <li>• Sky Replacement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl mb-6 gradient-text">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Audio Post</h3>
+                    <p class="opacity-80 mb-6">Professional audio editing, mixing, and sound design for pristine audio quality.</p>
+                    <ul class="text-sm opacity-70 space-y-2">
+                        <li>• Audio Cleanup</li>
+                        <li>• Sound Mixing</li>
+                        <li>• Voice Enhancement</li>
+                        <li>• Music Sync</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-4xl mb-6 gradient-text">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">YouTube Content</h3>
+                    <p class="opacity-80 mb-6">Specialized YouTube video editing with engaging thumbnails and optimized content flow.</p>
+                    <ul class="text-sm opacity-70 space-y-2">
+                        <li>• YouTube Editing</li>
+                        <li>• Thumbnail Design</li>
+                        <li>• Intro/Outro</li>
+                        <li>• Engagement Boost</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-4xl mb-6 gradient-text">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Social Media</h3>
+                    <p class="opacity-80 mb-6">Platform-optimized content for Instagram, TikTok, Facebook, and other social platforms.</p>
+                    <ul class="text-sm opacity-70 space-y-2">
+                        <li>• Instagram Reels</li>
+                        <li>• TikTok Videos</li>
+                        <li>• Stories Content</li>
+                        <li>• Platform Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="text-4xl mb-6 gradient-text">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Corporate Videos</h3>
+                    <p class="opacity-80 mb-6">Professional corporate video production including training, presentations, and company profiles.</p>
+                    <ul class="text-sm opacity-70 space-y-2">
+                        <li>• Training Videos</li>
+                        <li>• Company Profiles</li>
+                        <li>• Presentations</li>
+                        <li>• Event Coverage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Skills & Software</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    Proficient in industry-leading software and cutting-edge techniques
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Video Editing Software -->
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-8 gradient-text">Video Editing</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Adobe Premiere Pro</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>DaVinci Resolve</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Final Cut Pro</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Avid Media Composer</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motion Graphics & VFX -->
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-8 gradient-text">Motion Graphics & VFX</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Adobe After Effects</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Cinema 4D</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Blender</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Adobe Photoshop</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color & Audio -->
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-8 gradient-text">Color & Audio</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Color Grading</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Adobe Audition</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Sound Design</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creative Skills -->
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-8 gradient-text">Creative Skills</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Storytelling</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Pacing & Rhythm</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Creative Direction</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Client Testimonials</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    What clients say about working with me
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">John Smith</h4>
+                            <p class="text-sm opacity-70">CEO, Tech Corp</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="opacity-80">
+                        "Mubshar delivered exceptional video editing work for our product launch. The attention to detail and creative vision exceeded our expectations."
+                    </p>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b776?w=80&h=80&fit=crop&crop=face" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-sm opacity-70">Music Producer</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="opacity-80">
+                        "Working with Mubshar on music videos has been amazing. He understands the rhythm and creates visually stunning content that perfectly matches our artists."
+                    </p>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&crop=face" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mike Chen</h4>
+                            <p class="text-sm opacity-70">Content Creator</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="opacity-80">
+                        "Mubshar helped scale my YouTube channel with incredible editing skills. My videos now look professional and engaging. Highly recommended!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-6">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Pricing Packages</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    Choose the perfect package for your video editing needs
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Basic Package -->
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Basic Edit</h3>
+                        <div class="text-4xl font-bold gradient-text mb-2">$50</div>
+                        <p class="opacity-70">Per video (up to 5 min)</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Basic cuts & transitions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Color correction</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Audio sync</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>2 revisions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>48hr delivery</li>
+                    </ul>
+                    <button class="w-full btn-primary py-3 rounded-full">Choose Basic</button>
+                </div>
+
+                <!-- Professional Package -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Professional</h3>
+                        <div class="text-4xl font-bold gradient-text mb-2">$150</div>
+                        <p class="opacity-70">Per video (up to 10 min)</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Advanced editing</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Color grading</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Motion graphics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Audio enhancement</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>3 revisions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>24hr delivery</li>
+                    </ul>
+                    <button class="w-full btn-primary py-3 rounded-full">Choose Professional</button>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-gradient-to-r from-red-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm">Most Popular</span>
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Premium Cinematic</h3>
+                        <div class="text-4xl font-bold gradient-text mb-2">$300</div>
+                        <p class="opacity-70">Per video (up to 15 min)</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Cinematic editing</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Advanced VFX</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Complex motion graphics</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Professional color grade</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Sound design</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Unlimited revisions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>12hr delivery</li>
+                    </ul>
+                    <button class="w-full btn-primary py-3 rounded-full">Choose Premium</button>
+                </div>
+
+                <!-- Enterprise Package -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+                        <div class="text-4xl font-bold gradient-text mb-2">Custom</div>
+                        <p class="opacity-70">Large projects</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Full production service</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Multi-format delivery</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Dedicated support</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Project management</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Priority delivery</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i>Custom workflow</li>
+                    </ul>
+                    <button class="w-full btn-primary py-3 rounded-full">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 px-6 bg-gradient-to-b from-gray-900 to-black">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">My Process</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    A streamlined workflow to deliver exceptional results
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold mb-2 gradient-text">1. Discovery & Brief</h3>
+                        <p class="opacity-80">Understanding your vision, goals, and requirements through detailed consultation.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold mb-2 gradient-text">2. Asset Review</h3>
+                        <p class="opacity-80">Reviewing all footage, audio, and materials to plan the editing approach.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold mb-2 gradient-text">3. Rough Cut</h3>
+                        <p class="opacity-80">Creating the initial edit with basic cuts, structure, and pacing.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold mb-2 gradient-text">4. Refinement</h3>
+                        <p class="opacity-80">Adding transitions, effects, color grading, and audio enhancement.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold mb-2 gradient-text">5. Client Review</h3>
+                        <p class="opacity-80">Presenting the draft for feedback and incorporating requested changes.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h3 class="text-xl font-bold mb-2 gradient-text">6. Final Delivery</h3>
+                        <p class="opacity-80">Delivering the final video in all required formats and resolutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Latest Insights</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    Tips, tutorials, and industry insights from a professional video editor
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="glass p-6 rounded-2xl" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=250&fit=crop" alt="Blog Post" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold mb-3">5 Essential Video Editing Tips for Beginners</h3>
+                    <p class="opacity-80 mb-4">Learn the fundamental techniques that every video editor should master...</p>
+                    <a href="#" class="text-red-400 hover:text-red-300">Read More →</a>
+                </article>
+
+                <article class="glass p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=400&h=250&fit=crop" alt="Blog Post" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold mb-3">The Art of Color Grading in Modern Cinema</h3>
+                    <p class="opacity-80 mb-4">Exploring how color grading transforms the mood and atmosphere of films...</p>
+                    <a href="#" class="text-red-400 hover:text-red-300">Read More →</a>
+                </article>
+
+                <article class="glass p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?w=400&h=250&fit=crop" alt="Blog Post" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold mb-3">Creating Viral Content: What Works in 2024</h3>
+                    <p class="opacity-80 mb-4">Understanding the elements that make video content shareable and engaging...</p>
+                    <a href="#" class="text-red-400 hover:text-red-300">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Let's Create Together</h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto">
+                    Ready to bring your vision to life? Let's discuss your next video project
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="glass p-8 rounded-3xl" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-xl focus:outline-none focus:border-red-400 transition-colors" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-xl focus:outline-none focus:border-red-400 transition-colors" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Project Type</label>
+                            <select class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-xl focus:outline-none focus:border-red-400 transition-colors">
+                                <option>Select Project Type</option>
+                                <option>Music Video</option>
+                                <option>Commercial</option>
+                                <option>Corporate Video</option>
+                                <option>Social Media</option>
+                                <option>Documentary</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Budget Range</label>
+                            <select class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-xl focus:outline-none focus:border-red-400 transition-colors">
+                                <option>Select Budget Range</option>
+                                <option>$50 - $150</option>
+                                <option>$150 - $500</option>
+                                <option>$500 - $1000</option>
+                                <option>$1000+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea class="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-xl focus:outline-none focus:border-red-400 transition-colors h-32" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Upload Files (Optional)</label>
+                            <div class="border-2 border-dashed border-white border-opacity-20 rounded-xl p-6 text-center hover:border-red-400 transition-colors cursor-pointer">
+                                <i class="fas fa-cloud-upload-alt text-3xl mb-2 opacity-50"></i>
+                                <p class="opacity-70">Drag and drop files here or click to browse</p>
+                                <input type="file" class="hidden" multiple accept="video/*,image/*,.zip,.rar">
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full btn-primary py-4 rounded-xl text-white font-semibold">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div data-aos="fade-left">
+                    <div class="glass p-8 rounded-3xl mb-8">
+                        <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="opacity-80">mubshar.editor@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="opacity-80">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Location</h4>
+                                    <p class="opacity-80">Los Angeles, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass p-8 rounded-3xl">
+                        <h3 class="text-2xl font-bold mb-6">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-instagram text-white"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-youtube text-white"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-linkedin text-white"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-twitter text-white"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                                <i class="fab fa-behance text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white border-opacity-10">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold gradient-text mb-4">MUBSHAR</div>
+                    <p class="opacity-80">Professional video editor creating cinematic experiences that captivate and inspire.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Services</h3>
+                    <ul class="space-y-2 opacity-80">
+                        <li>Video Editing</li>
+                        <li>Color Grading</li>
+                        <li>Motion Graphics</li>
+                        <li>VFX & Compositing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 opacity-80">
+                        <li><a href="#home" class="hover:text-red-400">Home</a></li>
+                        <li><a href="#about" class="hover:text-red-400">About</a></li>
+                        <li><a href="#portfolio" class="hover:text-red-400">Portfolio</a></li>
+                        <li><a href="#contact" class="hover:text-red-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2 opacity-80">
+                        <li>mubshar.editor@gmail.com</li>
+                        <li>+1 (555) 123-4567</li>
+                        <li>Los Angeles, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-10 mt-8 pt-8 text-center opacity-60">
+                <p>&copy; 2024 Mubshar. All rights reserved. | Designed with ❤️ for cinematic excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="aspect-w-16 aspect-h-9">
+                <video id="modalVideo" controls playsinline webkit-playsinline class="w-full h-96 rounded-xl">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
